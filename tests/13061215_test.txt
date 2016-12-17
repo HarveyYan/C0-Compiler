@@ -1,0 +1,64 @@
+const int a=1;
+const int b = -1;
+const float f1 = -1., f2=--1.01;
+const char ch = 'S';
+
+int _global_int, int_arr[20];
+float _global_float, m[10];
+char _global_char;
+
+float return_float(float f){
+	return (-1*f1/f2+f);
+}
+
+int factorial(int i){
+	if (i > 1)
+		return (i*factorial(i-1));
+	else
+		return (1);
+}
+
+int mul(int a, int b){
+    return (a*b*1.0);
+}
+
+int empty(){
+    return (1.2*--1.2-0.44);
+}
+
+void init(){
+	scanf(_global_int, _global_float,_global_char);
+	printf(" ", empty());
+}
+
+void main(){
+	int i;
+	char ch;
+	ch = ('a' + 1)/2;
+	printf(('a' + 1)/2);
+	printf(" ", ch);
+	printf(" ", mul(3.5,4));
+	printf(" Hello and please input 3 times");
+	init();
+
+	if (--1.00 == --1.){
+	    printf(" Passed ");
+	}
+
+	if (_global_int>0)
+		if (_global_char<='Z'){
+		    printf(" return_float: ", return_float(_global_float));
+			for (i = return_float(_global_float);i<a-5*b;i=i+1)
+				printf(" Iterate: ",i);
+		}
+		else
+			printf("Greater than Z: ",_global_char);
+	else{
+		while(_global_int){
+			_global_int = _global_int + 1;
+			printf (" ", ch);
+		}
+		printf(" ", factorial(10));
+	}
+
+}

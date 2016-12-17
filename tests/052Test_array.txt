@@ -1,0 +1,17 @@
+const int a = 5, b = 6;
+const char c = 'x', d = 'y';
+int i, j;
+char m, n;
+int q[10];
+int p[20];
+
+void main(){
+	i = 1;
+	p[i] = 3;
+	q[i] = i;
+	printf(p[i]);
+	printf(q[i]);
+	q[i] = p[i];
+	printf(p[i]);
+	printf(q[i]);
+}

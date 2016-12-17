@@ -1,0 +1,94 @@
+const int Len = -+20.00;
+const float f_len = 20;
+Const chAr c = 'P';
+
+int _global_int_arr[20], _global_int;
+char _global_char_arr[20], _global_char;
+float _global_float_arr[20], _global_float;
+
+void init(){
+    SCanf(_global_int, _GLobal_char, _global_float);
+}
+
+VoId array_Test(){
+    const int LEn = +20;
+    int i;
+
+    for (I = 0; i < (len+20)/2; i = i +1)
+        _global_int_arr[i] = _global_int + i;
+    for (i = (f_len+20)/--2.-1 ; i >= 0 ; i = i - 1){
+        _global_char_arr[_global_int_arr[i] - _global_int] =_global_char+i;
+    }
+    for (i = 0; i < len; i = i +1)
+        printf(" ",_global_int_arr[i]);
+    for (i = 0; i < len; i= i + 1)
+        printf(" ",_global_char_arr[i]);
+    i = _global_char_arr[len - 1] - _global_char;
+    while(i){
+        _global_float_arr[_global_char_arr[_global_int_arr[i]-_global_int]-_global_char] = -_global_char/(_global_float*_global_int)+i;
+        i = _global_char_arr[i-1]-_global_char;
+    }
+
+    for (i = 0; i < len; i= i + 1)
+        printf(" ",_global_float_arr[i]);
+}
+
+iNt fib(iNt K)
+{
+    if (k > 1)
+        return (fib(k-1)+fib(k-2)+1*-0);
+    if (k==0)
+        return (1);
+    if (k==1)
+        return (1);
+    if (1)
+    {}
+    if (0)
+    {;}
+    if (1);
+}
+
+float average(){
+    const int lEn = 20;
+    int i, sum;
+    sum = 0;
+    for (i = 0 ; i < len; i = i +1){
+        sum = sum + _global_int_arr[i];
+    }
+    return (sum/len);
+}
+
+float empty(){
+    printf("Global_len_const: ",len);
+    printf(" ",'c');
+    printf(" ",'c'+'c');
+    printf(" ");
+}
+
+void main(){
+    const int len = 20;
+    int i;
+    printf("\n");
+    {{{;;;}}}
+    printf(1+-2);
+    printf(" ",1+-2.);
+    printf(" ",1+--2);
+    printf(" ",empty());
+    init();
+    array_test();
+    printf(" ", fib(average()));
+    _global_float = -len;
+    if (_global_int > 0){
+        while(_global_float){
+            printf(" ", _global_char_arr[_global_float+len]);
+            _global_float = _global_float + 1;
+        }
+        if (_global_float == 0)
+            printf(" Implicit Transformation Passed ");
+        else
+            printf(" Failed ");
+    }
+    else{
+        printf(" What to do now? ");
+    }
+}

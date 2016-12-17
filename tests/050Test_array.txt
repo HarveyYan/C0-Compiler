@@ -1,0 +1,18 @@
+int a, b, c, d, i, r;
+int arr[10];
+
+void main(){
+	a = 10 - 9;
+	{;;;;;;;}
+	b = 20/10;
+	c = 4*6 - 21;
+	d = -5+9;
+	for (i = a; i <=9 ; i = i+1)
+		arr[-i*-1] = i*i;
+	r = ( arr[4] - c * d )/( arr[2] * ( arr[3] - b * ( 5 -1 )));
+	printf(" a = ", a); 
+	printf(" b = ", b);
+	printf(" c = ", c);
+	printf(" d = ", d);
+	printf(" r = ", r);
+}

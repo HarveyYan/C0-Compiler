@@ -1,0 +1,39 @@
+int headarray[3], footarray[3];
+int i, head, foot;
+
+void calculation(int head, int foot){
+	int n, cock, rabbit;
+	n = 0;
+	for (cock = 1; cock <= head; cock = cock + 1){
+		rabbit = head - cock;
+		if (cock*2+rabbit*4 == foot){
+			printf("cocks:", cock);
+			printf("rabbits:",rabbit);
+			n = n+1;
+		}
+	}
+	if (n == 0){
+		printf("cocks", 0);
+		printf("rabbits",0);
+	}
+}
+
+void main(){
+	for (i = 0; i <=2 ; i = i+1){
+		if (i == 0){
+			head = 4;
+			foot = 8;
+		} 
+		if (i == 1){
+			head = 8;
+			foot = 4;
+		} 
+		if (i == 2){
+			head = 29;
+			foot = 100;
+		} 
+		headarray[i]= head;
+		footarray[i]=foot;
+		calculation(headarray[i],footarray[i]);
+	}
+}

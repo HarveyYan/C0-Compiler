@@ -1,0 +1,6 @@
+const int a = 45, b = 27;
+int x, y, g, m; int q[5];
+void main(){
+	q[1] = a/b;
+	printf("q[1]=",q[1]);
+}

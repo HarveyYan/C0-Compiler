@@ -1,0 +1,17 @@
+int a[10];
+int b[10];
+int c[10];
+int index, final;
+
+void main(){
+	for (index = 0; index <=9 ; index = index+1)
+		c[index] = index;
+	for (index = 0; index <=9 ; index = index+1)
+		b[c[index]] = index;
+	for (index = 0; index <=9 ; index = index+1)
+		a[b[c[index]]] = index;
+	final=c[5]*b[c[1]]+(a[b[c[2]]*c[2]])-b[2];
+	for (index = 0; index <=9 ; index = index+1)
+		printf(a[index]);
+	printf("     ",final);
+}

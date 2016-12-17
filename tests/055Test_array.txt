@@ -1,0 +1,21 @@
+int a[10];
+char b[10];
+float c[10];
+int index, final;
+
+void main(){
+	for (index = 0; index <=9 ; index = index+1)
+		a[index] = index;
+	for (index = 0; index <=9 ; index = index+1)
+		b[a[index]] = index+'A';
+	for (index = 0; index <=9 ; index = index+1)
+		c[b[a[index]]-'A'] = index*0.1;
+	final=c[5]*b[c[1]]+(a[b[c[2]]*c[2]])-b[2];
+	for (index = 0; index <=9 ; index = index+1)
+		printf(a[index]);
+	for (index = 0; index <=9 ; index = index+1)
+        printf(b[index]);
+    for (index = 0; index <=9 ; index = index+1)
+        printf(c[index]);
+	printf("     ",final);
+}
